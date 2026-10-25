@@ -75,8 +75,8 @@ export function analyze(job: string, resume: string): Analysis {
 
 function rewrite(resume: string, found: string[]): string {
   const lines = resume.split("\n").map((l) => l.trim()).filter(Boolean);
-  const sections: Record<string, string[]> = { resumo: [], experiencia: [], educacao: [], outros: [] };
-  let cur = "outros";
+  const sections: Record<"resumo" | "experiencia" | "educacao" | "outros", string[]> = { resumo: [], experiencia: [], educacao: [], outros: [] };
+  let cur: keyof typeof sections = "outros";
   for (const l of lines) {
     const n = norm(l);
     if (/^(resumo|perfil|sobre)/.test(n)) { cur = "resumo"; continue; }
