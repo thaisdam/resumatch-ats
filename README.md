@@ -1,26 +1,40 @@
-# Resumatch Ats
+# 🎯 ResuMatch ATS - Otimizador Inteligente de Currículos
 
-Implement exactly the screenshot and nothing else
+> Aplicação web que compara currículos com descrições de vagas e gera uma versão adaptada para sistemas ATS (Applicant Tracking Systems), sem inventar experiências que o candidato não possui.
 
-This project was built with [Lovable](https://lovable.dev).
+🔗 **Aplicação em Produção:** [https://seu-app.lovable.app](https://seu-app.lovable.app)
 
-**Live app**: https://resumatch-ats.lovable.app
+---
 
-## Build with Lovable
+## 📌 O Problema
+Muitos profissionais qualificados são desclassificados antes mesmo de seu currículo chegar às mãos de um recrutador humano. Os sistemas ATS analisam correspondência de palavras-chave, formatação e relevância semântica. Se o currículo não estiver alinhado à terminologia da vaga, o candidato é descartado.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/617e7321-58dc-4ef7-8141-4ac690b9e0e9).
+O **ResuMatch ATS** resolve isso alinhando o vocabulário das experiências reais do candidato aos requisitos da oportunidade.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## 🚀 Funcionalidades
+- [x] Comparação textual em tempo real entre Vaga e Currículo.
+- [x] Cálculo do Score de Compatibilidade (Match ATS).
+- [x] Identificação de palavras-chave presentes e faltantes.
+- [x] Geração automática do currículo ajustado e estruturado.
+- [x] Copiar texto com 1 clique e exportar para impressão/PDF.
+- [x] Botão para carregar dados de exemplo com 1 clique.
 
-## Development
+## 🛠️ Tecnologias Utilizadas
+- **Lovable.dev** (Geração e prototipagem assistida por IA)
+- **React + Vite**
+- **Tailwind CSS + shadcn/ui**
+- **Lucide Icons**
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## 💬 O Mega Prompt Utilizado
+*(Aqui você cola o texto em Markdown do prompt inicial que usou no Lovable)*
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+## 🔄 Ajustes e Refinamentos Realizados
+1. **Adição do botão de Exemplo:** Para facilitar a avaliação sem necessidade de digitar textos longos.
+2. **Exportação amigável:** Ajustes de formatação no texto gerado para permitir copiar ou imprimir em PDF sem quebras visuais.
+3. **Aviso Ético:** Reforço visual na interface de que a ferramenta não inventa dados, apenas aprimora a semântica.
+
+## 📸 Demonstração
+*(Tire um print da tela com o resultado da análise e adicione a imagem aqui)*
+
+---
+Desenvolvido como projeto prático no Desafio DIO & Lovable.
