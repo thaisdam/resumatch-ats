@@ -2,7 +2,7 @@
 
 > Aplicação web que compara currículos com descrições de vagas e gera uma versão adaptada para sistemas ATS (Applicant Tracking Systems), sem inventar experiências que o candidato não possui.
 
-🔗 **Aplicação em Produção:** [https://resumatch-ats.lovable.app/](https://resumatch-ats.lovable.app/)
+🔗 **Aplicação em Produção:** [https://resumatch-ats.lovable.app](https://resumatch-ats.lovable.app/)
 
 ---
 
