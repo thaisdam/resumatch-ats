@@ -110,4 +110,11 @@
 @utility btn-primary { background: linear-gradient(120deg, var(--primary), var(--primary-glow)); color: var(--primary-foreground); box-shadow: 0 10px 30px -10px var(--primary); transition: transform .2s, opacity .2s; &:hover { transform: translateY(-1px); } &:disabled { opacity: .45; transform: none; cursor: not-allowed; } }
 @utility ring-anim { transition: stroke-dashoffset 1.2s cubic-bezier(.2,.8,.2,1); }
 .print-only { display: none; }
-@media print { body * { visibility: hidden; } .print-area, .print-area * { visibility: visible; } .print-area { position: absolute; inset: 0; background: white; color: black; border: none; } .no-print { display: none !important; } .print-only { display: block; } }
+@utility score-good { --score: var(--success); }
+@utility score-mid { --score: var(--warning); }
+@utility score-low { --score: var(--destructive); }
+@utility score-card { position: relative; overflow: hidden; border-color: color-mix(in oklab, var(--score) 40%, transparent); background-image: radial-gradient(circle at 50% 0%, color-mix(in oklab, var(--score) 22%, transparent), transparent 70%); }
+@utility score-glow { box-shadow: 0 0 50px -6px color-mix(in oklab, var(--score) 60%, transparent); animation: pulse-glow 2.6s ease-in-out infinite; }
+@keyframes pulse-glow { 50% { box-shadow: 0 0 70px 0 color-mix(in oklab, var(--score) 45%, transparent); } }
+@page { margin: 18mm; }
+@media print { body * { visibility: hidden; } .print-area, .print-area * { visibility: visible; } .print-area { position: absolute; inset: 0; background: white !important; color: black !important; border: none !important; backdrop-filter: none !important; padding: 0 !important; } .print-area pre { font-family: "Geist", sans-serif; font-size: 11pt; line-height: 1.55; } .no-print { display: none !important; } .print-only { display: block; } }
